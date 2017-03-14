@@ -1,8 +1,61 @@
-body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
-}
+body,
+.wrapper {
+  min-height: 100vh;
+  position: relative; }
 
 a {
-  color: #00B7FF;
+  color: #1DC7EA; }
+a:hover, a:focus {
+  color: #42d0ed;
+  text-decoration: none; }
+
+a:focus, a:active,
+button::-moz-focus-inner,
+input::-moz-focus-inner,
+input[type="reset"]::-moz-focus-inner,
+input[type="button"]::-moz-focus-inner,
+input[type="submit"]::-moz-focus-inner,
+select::-moz-focus-inner,
+input[type="file"] > input[type="button"]::-moz-focus-inner {
+  outline: 0; }
+
+.ui-slider-handle:focus,
+.navbar-toggle,
+input:focus {
+  outline: 0 !important; }
+
+/* review this */
+.wrapper {
+  position: relative;
+  top: 0;
+  height: 100vh; }
+
+.main-panel {
+  background: rgba(203, 203, 210, 0.15);
+  position: relative;
+  z-index: 2;
+  float: right;
+  width: calc(100% - 260px);
+  min-height: 100%; }
+.main-panel > .content {
+  padding: 30px 15px;
+  min-height: calc(100% - 123px); }
+.main-panel > .footer {
+  border-top: 1px solid #e7e7e7; }
+.main-panel .navbar {
+  margin-bottom: 0; }
+
+.main-panel {
+  width: 100%;
 }
+
+.navbar-header .navbar-toggle {
+  margin: 10px 15px 10px 0;
+  width: 40px;
+  height: 40px; }
+
+.navbar-header .collapse, .navbar-toggle {
+  display: block !important; }
+
+.navbar-header {
+  float: none; }
